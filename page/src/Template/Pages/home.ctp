@@ -120,7 +120,7 @@
                         <i class="fa fa-check fa-5x" aria-hidden="true"></i>
                         <h4>VALORES</h4><br>
 
-                        <ul style="text-align:left">
+                        <ul style="text-align:left; color: #777">
                             <li>Responsabilidad</li>
                             <li>Unión</li>
                             <li>Honestidad</li>
