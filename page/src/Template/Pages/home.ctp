@@ -29,7 +29,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?= $post->url ?>" class="img-responsive">
+                        <?= $this->Html->image("portfolio/$post->url", ['class'=> "img-responsive"]); ?>
+
                     </a>
                     <div class="portfolio-caption">
                         <h4><?= $post->title ?></h4>
@@ -65,7 +66,9 @@
                             <!-- Project Details Go Here -->
                             <h2><?= $post->title ?></h2>
                             <p class="item-intro text-muted"><?= $post->category ?></p>
-                            <img src="<?= $post->url ?>" class="img-responsive">
+                            <?= $this->Html->image("portfolio/$post->url", ['class'=> "img-responsive"]); ?>
+
+
                             <p><?= $post->text ?><p>
 
                             <ul class="list-inline">
@@ -154,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">GALERÍA</h2>
+                    <h2 class="section-heading"><a href="galeria">GALERÍA</a></h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
@@ -216,7 +219,7 @@
         </div>
     </aside>
 
-    <!-- Contact Section -->
+    <!-- Contact Section
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -260,3 +263,4 @@
             </div>
         </div>
     </section>
+    -->

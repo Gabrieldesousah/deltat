@@ -14,12 +14,6 @@
                   <?php foreach($posts as $post): ?>
                     <div class="col-lg-3" style="padding:0">
                         <?php echo $this->Html->image("galeria/".$post->album."/".$post->url, ['class'=> "img-responsive"]);?>
-                        <p>
-                            <?= $this->Html->link(__('Editar'), ['action'=>'edit', $post->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['action'=>'delete',$post->id],
-                                ['confirm'=>__('Are you sure you want to delete the post * {0}?', $post->id)]
-                            ) ?>
-                        </p>
                     </div>
                   <?php endforeach; ?>
                 </div>
@@ -30,7 +24,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="paginator">
+            <div class="paginator" style="text-align:center;">
                 <ul class="pagination">
                     <?php
                     echo $this->Paginator->prev('<- Previous');

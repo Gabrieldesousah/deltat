@@ -77,7 +77,7 @@ $cakeDescription = 'DeltaT';
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="pagesportfolio">Portfolio</a>
+                        <a class="page-scroll" href="pages#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="pages#about">About</a>

@@ -5,7 +5,7 @@ date_default_timezone_set('America/Sao_Paulo');
 class GaleriaController extends AppController{
     public $components = array('Paginator');
     public $paginate = array(
-        'limit' => 5,
+        'limit' => 20,
         'order' => array(
             'Galeria.title' => 'asc'
         )
@@ -65,3 +65,5 @@ class GaleriaController extends AppController{
         $this->redirect(['action'=>'index']);
     }
 }
+
+?>
