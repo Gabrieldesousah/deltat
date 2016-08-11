@@ -15,7 +15,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
+                    <h2 class="section-heading">
+                      <?= $this->Html->link(__('Portfolio'), ['controller' => 'Portfolio']) ?>
+                    </h2>
                     <h3 class="section-subheading text-muted">Here, the our images.</h3>
                 </div>
             </div>
@@ -89,66 +91,57 @@
 
 
 
-<!-- Team Section -->
-    <section id="about" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">ACERCA DE NOSOTROS</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <i class="fa fa-shield fa-5x" aria-hidden="true"></i>
-                        <h4>MISIÓN</h4><br>
-                        <p class="text-muted" style="text-align:left">
-                        Formarnos como una representación que empodere al contador itamita proveyéndole las herramientas, los conocimientos y todo el apoyo necesario para que aproveche su potencial y logre así generar un impacto tanto dentro como fuera del ITAM
-                        </p>
-
+    <!-- About Section -->
+        <section id="about" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">ACERCA DE NOSOTROS</h2>
+                        <h3 class="section-subheading text-muted"></h3>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <i class="fa fa-eye fa-5x" aria-hidden="true"></i>
-                        <h4>VISIÓN</h4><br>
-                        <p class="text-muted" style="text-align:left">En un año, habremos revolucionado la imagen del contador público del ITAM y generado un impacto en la vida de los alumnos, en su desarrollo tanto personal como profesional, dejando un legado que perdure en las próximas generaciones.
-</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <i class="fa fa-shield fa-5x" aria-hidden="true"></i>
+                            <h4>MISIÓN</h4><br>
+                            <p class="text-muted" style="text-align:left">
+                            Formarnos como una representación que empodere al contador itamita proveyéndole las herramientas, los conocimientos y todo el apoyo necesario para que aproveche su potencial y logre así generar un impacto tanto dentro como fuera del ITAM
+                            </p>
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <i class="fa fa-check fa-5x" aria-hidden="true"></i>
-                        <h4>VALORES</h4><br>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <i class="fa fa-eye fa-5x" aria-hidden="true"></i>
+                            <h4>VISIÓN</h4><br>
+                            <p class="text-muted" style="text-align:left">En un año, habremos revolucionado la imagen del contador público del ITAM y generado un impacto en la vida de los alumnos, en su desarrollo tanto personal como profesional, dejando un legado que perdure en las próximas generaciones.
+    </p>
 
-                        <ul style="text-align:left; color: #777">
-                            <li>Responsabilidad</li>
-                            <li>Unión</li>
-                            <li>Honestidad</li>
-                            <li>Compromiso</li>
-                            <li>Creatividad</li>
-                            <li>Respeto</li>
-                            <li>Cooperación</li>
-                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <i class="fa fa-check fa-5x" aria-hidden="true"></i>
+                            <h4>VALORES</h4><br>
+
+                            <ul style="text-align:left; color: #777">
+                                <li>Responsabilidad</li>
+                                <li>Unión</li>
+                                <li>Honestidad</li>
+                                <li>Compromiso</li>
+                                <li>Creatividad</li>
+                                <li>Respeto</li>
+                                <li>Cooperación</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-
-
-
-
-    <!-- Clients Aside -->
+    <!-- Galeria Aside -->
 
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <?= $this->Html->css('gallery.css') ?>
@@ -157,7 +150,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><a href="galeria">GALERÍA</a></h2>
+                  <h2 class="section-heading">
+                    <?= $this->Html->link(__('Galería'), ['controller' => 'Galerias']) ?>
+                  </h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
@@ -218,6 +213,23 @@
             </div>
         </div>
     </aside>
+
+    <!-- Team Section -->
+        <section id="team" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">EQUIPO</h2>
+                        <h3 class="section-subheading text-muted">Our members</h3>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <?= $this->Html->image("galeria/equipo/3.jpg", ['class'=> "img-responsive"]); ?>
+                </div>
+            </div>
+        </section>
+
+
 
     <!-- Contact Section
     <section id="contact">

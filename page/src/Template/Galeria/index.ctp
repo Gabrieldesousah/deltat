@@ -6,10 +6,6 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
 
-                <div class="col-lg-12 centered ">
-                    <?= $this->Html->link(__('Criar novo'), ['action'=>'add'], array('class' => 'btn btn-info')) ?>
-                </div>
-
                 <div>
                   <?php foreach($posts as $post): ?>
                     <div class="col-lg-3" style="padding:0">

@@ -67,7 +67,7 @@ $cakeDescription = 'DeltaT';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="pages">Delta T</a>
+                <a class="navbar-brand page-scroll" href="pages" >Delta T</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -85,12 +85,16 @@ $cakeDescription = 'DeltaT';
                     <li>
                         <a class="page-scroll" href="pages#team">Team</a>
                     </li>
+                    <!--
                     <li>
                         <a class="page-scroll" href="pages#contact">Contact</a>
                     </li>
+                    -->
+                    <!--
                     <li>
                         <a href="pages#subscribeModal" class="" data-toggle="modal">Subscribe &nbsp;&nbsp;</a>
                     </li>
+                  -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -178,9 +182,7 @@ $cakeDescription = 'DeltaT';
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a style="color: #000" href="#">Privacy Policy</a>
-                        </li>
-                        <li><a style="color: #000" href="#">Terms of Use</a>
+                        <li><a style="color: #000" href="#">contact@deltatconta.com</a>
                         </li>
                     </ul>
                 </div>
