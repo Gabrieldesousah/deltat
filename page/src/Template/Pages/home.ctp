@@ -222,7 +222,11 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
+<<<<<<< HEAD
                     <?= $this->Html->image("galeria/Equipo/3.jpg", ['class'=> "img-responsive"]); ?>
+=======
+                    <?= $this->Html->image("galeria/equipo/3.jpg", ['class'=> "img-responsive"]); ?>
+>>>>>>> 176738ab94c2a9e9f490ffe9a77229f92910f65e
                 </div>
             </div>
         </section>
