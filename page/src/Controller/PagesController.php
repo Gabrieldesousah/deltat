@@ -51,7 +51,7 @@ class PagesController extends AppController
 
         $this->loadModel('Galeria');
         $imgsgaleria = $this->Galeria->find('all', [
-            'limit' => 40,
+            'limit' => 30,
             'order' => array(
             'Galeria.album' => 'asc'
         )

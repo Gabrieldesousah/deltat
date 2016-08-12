@@ -8,7 +8,6 @@ class Galeria extends Entity {
         'title' => true,
         'text'  => true,
         'url'  => true,
-        'thumbnail'  => true,
         'category'  => true,
         'album'  => true
     ];

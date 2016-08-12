@@ -7,10 +7,6 @@
                 </div>
 
 
-                <div class="col-lg-12">
-                    <?= $this->Html->link(__('Criar novo'), ['action'=>'add'], array('class' => 'btn btn-info')) ?>
-                </div>
-          
             <?php $i = 1; ?>
               <?php foreach($posts as $post): ?>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -20,17 +16,12 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?= $post->url ?>" class="img-responsive">
+                        <?= $this->Html->image("portfolio/$post->url", ['class'=> "img-responsive"]); ?>
                     </a>
                     <div class="portfolio-caption">
                         <h4><?= $post->title ?></h4>
                         <p class="text-muted"><?= $post->category ?></p>
-                        <p>
-                            <?= $this->Html->link(__('Editar'), ['action'=>'edit', $post->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['action'=>'delete',$post->id],
-                                ['confirm'=>__('Are you sure you want to delete the post * {0}?', $post->id)]
-                            ) ?>
-                        </p>
+
                     </div>
                 </div>
                 <?php $i++; ?>
@@ -59,7 +50,7 @@
                             <!-- Project Details Go Here -->
                             <h2><?= $post->title ?></h2>
                             <p class="item-intro text-muted"><?= $post->category ?></p>
-                            <img src="<?= $post->url ?>" class="img-responsive">
+                            <?= $this->Html->image("portfolio/$post->url", ['class'=> "img-responsive"]); ?>
                             <p><?= $post->text ?><p>
 
                             <ul class="list-inline">
@@ -80,7 +71,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="paginator">
+            <div class="paginator text-center">
                 <ul class="pagination">
                     <?php
                     echo $this->Paginator->prev('<- Previous');
