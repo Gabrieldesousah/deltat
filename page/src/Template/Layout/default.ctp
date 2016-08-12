@@ -40,6 +40,7 @@ $cakeDescription = 'DeltaT';
     <?= $this->Html->css('agency.css') ?>
 
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <?= $this->Html->css('font-awesome.min.css') ?>
