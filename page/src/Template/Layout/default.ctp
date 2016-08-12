@@ -192,10 +192,9 @@ $cakeDescription = 'DeltaT';
 
     <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('agency.css') ?>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <?= $this->Html->css('font-awesome.min.css') ?>
 
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <?= $this->Html->script('jquery.min.js') ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
 
     <?= $this->Html->script('classie.js') ?>

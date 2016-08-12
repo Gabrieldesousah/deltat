@@ -143,15 +143,15 @@
 
     <!-- Galeria Aside -->
 
-    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <?= $this->Html->css('blueimp-gallery.min.css') ?>
     <?= $this->Html->css('gallery.css') ?>
 
-    <aside class="gallery" style="padding:20px">
+    <section class="gallery">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2 class="section-heading">
-                    <?= $this->Html->link(__('Galería'), ['controller' => 'Galerias']) ?>
+                    <?= $this->Html->link(__('Galería'), ['controller' => 'Galeria']) ?>
                   </h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
@@ -203,16 +203,14 @@
                 </div>
 
 
-
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+                <?= $this->Html->script('jquery.min.js') ?>
+                <?= $this->Html->script('jquery.blueimp-gallery.min.js') ?>
                 <?= $this->Html->script('gallery.js') ?>
-
 
 
             </div>
         </div>
-    </aside>
+    </section>
 
     <!-- Team Section -->
         <section id="team" class="bg-light-gray">
