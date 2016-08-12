@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">
-                      <?= $this->Html->link(__('Portfolio'), ['controller' => 'Portfolio']) ?>
+                      <?= $this->Html->link(__('Proyectos'), ['controller' => 'Portfolio']) ?>
                     </h2>
                     <h3 class="section-subheading text-muted">Here, the our images.</h3>
                 </div>
@@ -36,8 +36,6 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4><?= $post->title ?></h4>
-                        <p class="text-muted"><?= $post->category ?></p>
-
                     </div>
                 </div>
                 <?php $i++; ?>
@@ -222,11 +220,9 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-<<<<<<< HEAD
+
                     <?= $this->Html->image("galeria/Equipo/3.jpg", ['class'=> "img-responsive"]); ?>
-=======
-                    <?= $this->Html->image("galeria/equipo/3.jpg", ['class'=> "img-responsive"]); ?>
->>>>>>> 176738ab94c2a9e9f490ffe9a77229f92910f65e
+
                 </div>
             </div>
         </section>

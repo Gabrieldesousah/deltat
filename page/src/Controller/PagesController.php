@@ -41,9 +41,9 @@ class PagesController extends AppController
         // In a controller method.
         $this->loadModel('Portfolio');
         $post = $this->Portfolio->find('all', [
-            'limit' => 5,
+            'limit' => 6,
             'order' => array(
-            'Portfolio.title' => 'asc'
+            'Portfolio.id' => 'asc'
         )
         ]);
         $this->set('posts', $post);
@@ -53,7 +53,7 @@ class PagesController extends AppController
         $imgsgaleria = $this->Galeria->find('all', [
             'limit' => 30,
             'order' => array(
-            'Galeria.album' => 'asc'
+            'Galeria.id' => 'desc'
         )
         ]);
         $this->set('imgsgaleria', $imgsgaleria);

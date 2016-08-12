@@ -29,17 +29,20 @@ $cakeDescription = 'DeltaT';
             <?= $cakeDescription ?>: <?= $this->fetch('title') ?>
         <?php } ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('bootstrap.min.css') ?>
-    <?= $this->Html->css('agency.css') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 
+    <?= $this->Html->meta('icon') ?>
+
+    <?= $this->Html->css('bootstrap.min.css') ?>
+    <?= $this->Html->css('agency.css') ?>
+
+
+
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?= $this->Html->css('font-awesome.min.css') ?>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -190,13 +193,9 @@ $cakeDescription = 'DeltaT';
         </div>
     </footer>
 
-    <?= $this->Html->css('bootstrap.min.css') ?>
-    <?= $this->Html->css('agency.css') ?>
-    <?= $this->Html->css('font-awesome.min.css') ?>
 
     <?= $this->Html->script('jquery.min.js') ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
-
     <?= $this->Html->script('classie.js') ?>
     <?= $this->Html->script('cbpAnimatedHeader.js') ?>
     <?= $this->Html->script('jqBootstrapValidation.js') ?>
